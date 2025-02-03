@@ -13,3 +13,9 @@ class Assertion<T>(private val target: T) {
     }
   }
 }
+
+fun main() {
+  val result = Assertion(5)
+  result isEqualTo 4
+  result isDifferentFrom 5
+}
